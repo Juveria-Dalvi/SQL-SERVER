@@ -1,2 +1,0 @@
-# SQL-SERVER
-Course Notes

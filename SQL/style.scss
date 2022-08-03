@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white;
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 1;
+        overflow: hidden;
+        background-color: rgb(57, 55, 55);
+        border: 2px dashed rgb(255, 255, 255);
+        h1 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-variant: small-caps;
+            color: azure;
+        }
+    }
+    main {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        .notes {
+            color: black;
+            background-color: white;
+            padding: 5px;
+            margin: 0 0 0 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .notes:hover {
+            color: rgb(248, 244, 244);
+            background-color: rgb(58, 114, 158);
+            padding: 7px;
+            margin: 0 0 0 19px;
+            border-radius: 5px;
+        }
+    }
+    footer {
+        color: aliceblue;
+        background-color: red;
+    }
+}

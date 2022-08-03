@@ -1,0 +1,46 @@
+		SQL SERVER DEMO
+
+C - create
+R - read
+U - update
+D - delete
+
+- Users can't directly work with database
+- User uses DBMS software then work with Database
+- Various Database (DBMS) softwares are 
+1 - SQL Server, 
+2 - DB2 ,
+3 - Oracle,
+4 - MYSQL, 
+5 - POSTGRESQL.
+- This DBMS are good for storing and processing Structured Data.
+- structured data means Data is stored in structural format for e.g in table format.
+- All of the above DBMS software uses Structured Query Language i.e. SQL
+- Software's are used to maintain the database.
+- SQL Server is from Micresoft company, ORACLE & MYSQL are from oracle corp., DB2 is from IBM, POSTGRESQL is from postgresql forum development.
+- They all belong from DBMS family but have different companies.
+-MySql and PostgresSql are open source softwares, No licence required but ither software required licence.
+
+
+	Apart from SQL databases, companies also uses NoSql databases:-
+1 - mongoDB
+2 - cassandra
+- This DBMS are good for storing and processing Unstructured Data.
+- Unstructured Data means Data is collected from various images , txt files , MSword files etc.
+- They do not use Structured Query Language (SQL).
+- They use json (JavaScript Object Notation).
+
+
+SQL Server :-
+------------
+T-SQL (Transact-SQl) - language
+
+Tool :-
+-------
+SSMS (SQL Server Management Studio) - tool
+
+
+
+
+
+

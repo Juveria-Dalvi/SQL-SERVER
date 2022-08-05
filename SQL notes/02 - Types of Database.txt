@@ -1,0 +1,65 @@
+What is Database?
+-----------------
+- A Database is a organized collection of interrelated data.
+- For e.g. A university database stores data related to students,course, faculty etc.. which is interrelated.
+- In Database we organise data using tables.
+- We use DB to store Data.
+
+
+What are the types of databases?
+--------------------------------
+- Databases are two types:
+  1]OLTP Database (Online transaction processing)
+  2]OLAP Database (Online analytical processing)
+- OLTP is used to store day-to-day transactions.
+- OLAP is used to analyze already stored data.
+- framework technologies like - hadoop , spark & scala , data science.
+- This technologies are mainly used for data analysis.It comes under OLAP.
+- OLTP is for running business and OLAP is to analyze business.
+- OLTP stores current data whereas OLAP stores historical data.
+
+What are the day-to-day operations on Database?
+-----------------------------------------------
+- C create
+- R read
+- U update
+- D delete
+- User can not directly work with database, it requires a software called DBMS.
+- Database is storage , DBMS is database management system which is software used to create and to manage database.
+- DBMS is an interface between user and database.
+- If user wants to perform any operation, they pass instruction to DBMS then DBMS performs the task and gives us output.
+
+
+Evolution of DBMS :
+-------------------
+- In 1960 companies uses FMS (file management system).
+- In 1970 companies uses HDBMS (Hieratchical DBMS) & NDBMS(Network DBMS).
+- In 1980 companies uses RDBMS (Relational DBMS).
+- In 1990 companies uses ORDBMS (Object Relational DBMS).
+
+
+Types of DBMS :
+---------------
+{1 HDBMS
+2 NDBMS} - outdated
+3 RDBMS
+4 ORDBMS
+
+
+RDBMS:
+------
+- RDBMS concepts introduced by E.F.CODD
+- He introduced 12 rules called codd rules.
+- A DB software that supports all 12 rules is called perfect rdbms software.
+- According to E.F.CODD in RDBMS data must be organized in tables i.e. rows and columns.
+- In RDBMS data is stored in rows and columns.
+- Vertical collection of cells are called columns,fields or attributes.
+- Horizontal collection of cells are called rows, record or tuple.
+
+
+
+
+
+
+
+

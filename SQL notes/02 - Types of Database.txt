@@ -55,11 +55,56 @@ RDBMS:
 - In RDBMS data is stored in rows and columns.
 - Vertical collection of cells are called columns,fields or attributes.
 - Horizontal collection of cells are called rows, record or tuple.
+- row contains field values.
+- Database is collection of tables.
+- Table is collection of rows & columns.
+- Row is collection of field values.
+- Column is collection of values assigned to one field.
 
 
+E.F.CODD says:-
+- Every table must contains primary key to uniquely identify the records.
+- ex :- Bank acc. no. , Company emp. ID , for citizen of india Aadhar no., for every class roll no. this are all primary key to identify each person.
 
 
+RDBMS softwares:-
+-----------------
+Oracle.
+MySQL.
+SQL Server.
+PostgreSQL.
+IBM DB2.
+Microsoft Access.
+SQLite.
+MariaDB.
+LibreOffice Base.
 
+
+What is SQL Server?
+-------------------
+- SQL server is a RDBMS product from microsoft used to create and to manage database.
+- It also supports few concepts of ORDBMS.
+
+
+ORDBMS :-
+-------
+- Object Relational DBMS.
+- It is the combination of RDBMS & OOPS.
+      
+	 ORDBMS = RDBMS + OOPS (reusability)
+
+	Data abstraction,
+	Data encapsulation,
+	Data inheritance,
+	Data polimorphism are OOPS concepts.
+
+- RDBMS doesn't support reusability but ORDBMS supports reusability.
+
+ORDBMS softwares:-
+-----------------
+ORACLE
+SQL server
+POSTGRESQL
 
 
 

@@ -1,0 +1,48 @@
+SQL Server
+----------
+- SQL server is basically a RDBMS product from microsoft and also supports ORDBMS features and used to create and to manage database.
+- SQL server can be used for database development and administration.
+
+ROLES & Duties:
+database Development
+- creating tables     
+- creating views      	
+- creating synonyms
+- creating indexes
+- creating sequences
+- creating procedures
+- creating functions
+- creating triggers
+- writing queries
+
+
+Database Administration
+- installation of SQL server
+- creating database inside server
+- creating logins
+- database backup and restore
+- database export import
+- DB upgradation & migration
+
+
+CLIENT/SERVER Architecture:-
+-----------------------------
+1. Server
+- server is a system where sql server is installed and running.
+- inside server Sql server manages two memories: DB & INSTANCE
+- DB is created in hard disk and acts as permanent storage and INSTANCE is created in RAM and acts as temporary storage.
+
+2. Client
+- client is a system where users can :
+   1- connects to server
+   2- submit requests to server
+   3- recieves response from server
+
+
+SQL Server Management studio -> SSMS
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+How to connect to SQL server :-
+-----------------------------
+- To connect to SQL server open SSMS and enter   following details.
+
+	server type : DB Engine
+	server name : LAPTOP-R82J1IA9
+	authentication types : SQL server / windows
+	login		: SA (system admin)
+	password	: 123 (any password)
+- SQL server authentication needs to prodive login   & password.
+- by default Login contains SA as username.
+- password is set during installation process.
+
+
+Creating database in SQL server:-
+-------------------------------
+- In Object explorer
+	select Databases => New Database
+	Enter Databases Name => DB10
+- click OK
+- A Database is created with following two files
+	 1 - Data file (.MDF)
+	 2 - Log file (.LDF)
+- file extention
+	.MDF(master data file)
+	.LDF(log data file)
+- Data file stores data and log files stores operation.
+
+NAME     |  TYPE | INITIAL SIZE |  AUTOGROWTH |  PATH
+DB10	 |  Data |   8MB	|   64MB      |  ----
+DB10_LOG |   LOG |   8MB        |   64MB      |  ------
+
+path :-
+-----
+
+C:\Program Files\
+   Microsoft SQL Server\
+   MSSQL15.MSSQLSERVER\MSSQL\DATA
+
+
+=======================================
+	 
+		T-SQL (Transact-SQL)
+		--------------------
+=> SQL stands for Structured query language.
+=> Used to communicate with SQL server.
+=> User communicates with SQL server by sending    commands called Queries.
+=> A Query is command/instructions/questions submitted    to SQL server to perform some operaton over DB.
+=> SQL is originally introduced by IBM and initial name    of this language was SEQUEL and later it is renamed    to SQL
+=> SEQUEL (Structured English Query Language).
+
+user uses => SSMS =>to connect SQL server => to communicate with DB
+ 
+=> Based on operations over DB SQL is categorized into following sub-languages.
+	DDL (Data Defination Language) ,
+	DML (Data Manipulation Language),
+	DRL (Data Retrival Language),
+	TCL (Transaction Control Language),
+	DCL (Data Control Language)
+
+
+			SQL
+			---
+
+
+   DDL	|  DML	|  DRL	  | TCL	    |    DCL   |
+create	  insert   select  commit	grant
+alter	  update	   rollback	revoke
+drop	  delete	   savepoint
+truncate  merge
+
+
+Data & Data Defination :
+-----------------------
+- Data Defination is also called MetaData which means data about the data.
+
+EMPID   ENAME    SAL  => DATA DEFINATION/METADATA
+100       A      5000 => DATA
+
+
+Data Types  in SQL Server:-
+-------------------------
+=> Data types specifies
+	- type of the data allowed in a column.
+	- amount of memory allocated for column.
+
+
+
+
+
+
+
+
+
+
+
+

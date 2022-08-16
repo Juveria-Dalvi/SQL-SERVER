@@ -1,1 +1,1 @@
-# [SQL-SERVER](https://Javeriya-Dalvi.github.io/SQL-SERVER/SQL/index.html)
+# [SQL-SERVER](https://Juveria-Dalvi.github.io/SQL-SERVER/SQL/index.html)

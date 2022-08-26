@@ -1,0 +1,126 @@
+installation of SQL server and SSMS
+-----------------------------------
+
+Datatypes in SQL
+----------------
+
+Classification of datatypes in SQL server
+-----------------------------------------
+
+
+CHAR
+	ASCII
+		char
+		varchar
+		varchar(max)
+	UNICODE
+		nchar
+		nvarchar
+		nvarchar(max)
+
+INTIGER
+	tinyint
+	smallint
+	int
+	bigint
+
+FLOAT
+	decimal(p,s)
+
+CURRENCY
+	smallmoney
+	money
+
+DATE
+	date
+	time
+	datetime
+
+BINARY
+	binary
+	varbinary
+	varbinary(max)
+
+
+
+char(size):-
+----------
+=> allows character data upto 8000 characters
+=> recommended for fixed length character columns.
+
+ex:- NAME char(10)  -> into this name 10 characters allowed.
+
+Sachin----  
+In above name 'Sachin' takes 6 bytes of space  remaining 4 bytes are wasted.
+In case of char extra bytes are wasted.
+
+ravi------
+    wasted
+
+=>in char data type extra bytes are wasted so don't use char data types for variable length columns and use char datatype of fixed length columns.
+
+fixed length examples:-  
+state_code  =>contains =>   char(2)
+AP
+TS
+MH
+
+country_code => contains  => char(3)
+IND
+USA
+UAE
+
+
+
+varchar(size) :-
+----------------
+
+=>allows character data upto 8000 chars
+=> recommended for variable length columns.
+
+	ex :-  NAME VARCHAR(10)
+		Sachin----
+		      released
+=>In case of VARCHAR extra bytes are released.
+
+
+
+
+varchar(max) :-
+--------------
+=>Allows character data upto 2GB.
+ex:- text varchar(max)
+
+
+
+NOTE:char/varchar/varchar(max) allows ASCII characters(256 chars) that includes a-z,A-Z,0-9,special characters.
+
+
+
+nchar/nvarchar/nvarchar(max):-
+------------------------------
+=> n stands for National
+=> Allows unicode characters
+=> UNICODE contains 65,536 chars.
+=> It includes characters of diffrent languages.
+
+
+
+Integer types:-
+---------------
+=> Allows numbers without decimal part.
+
+
+tinyint   1 bytes    0 to 255
+smallint  2 bytes    -32768 to 32767
+int       4 bytes    -2,147,483,648 to 2,147,483,648
+bigint    8 bytes    -9,223,372,036,854,775,808
+			 to
+		      9,223,372,036,854,775,807
+
+
+
+
+
+
+

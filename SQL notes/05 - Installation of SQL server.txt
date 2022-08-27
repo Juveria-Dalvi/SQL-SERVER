@@ -113,10 +113,33 @@ Integer types:-
 
 tinyint   1 bytes    0 to 255
 smallint  2 bytes    -32768 to 32767
-int       4 bytes    -2,147,483,648 to 2,147,483,648
+int       4 bytes    -2,147,483,648 
+			   to 
+                      2,147,483,647
 bigint    8 bytes    -9,223,372,036,854,775,808
-			 to
+			         to
 		      9,223,372,036,854,775,807
+
+
+Decimal(p,s):-
+------------
+=>Allows numbers with decimal parts.
+
+p => precision => total no of digits.
+s => scale     => no. of digits allowed after decimal.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

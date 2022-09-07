@@ -1,0 +1,128 @@
+currency types:-
+----------------
+=> used for fields related to money
+
+SMALLMONEY		4 Bytes     range from :- -214748.3648 to 214748.3647
+
+MONEY			8 bytes	    range from :-  -922337203685477.5808 to 922337203685477.5807
+
+
+Date datatypes:-
+----------------
+ DATE		=>Allows only date
+ TIME		=>Allows only time
+ DATETIME	=>Allows both date & time
+
+=>The default date format in SQL server is YYYY-MM-DD
+=> Default time format for everyone is same as HH:MI:SS
+
+
+Binary types:-
+--------------
+=>Allows binary data that includes multimedia objects like audio,video,images.
+
+1. Binary		=> for fixed length upto 8000
+	=>extra bytes are wasted
+
+2. VarBinary		=> for variable length upto 8000 
+	=>extra bytes are realesed
+3. VarBinary(max)	=>Allows upto 2GB
+
+
+Creating tables in Database:-
+------------------------------
+=>commands are not case sensitive
+
+syntax:
+CREATE TABLE <tblname>
+(
+colname datatype(size),
+colname datatype(size),
+)
+
+
+Rules:-
+-------
+1] table name should start ith alphabet.
+2] Name should not contain spaces & special Characters but allows _,#,$
+3] Name can be upto 128 characters
+4] Each table can have 1024 cols
+5] No. of rows unlimited
+
+	abc123  -> Valid
+	123abc  -> Invalid
+	abc*123 -> Invalid
+	abc 123 -> Invalid
+	abc_123 -> Valid
+
+
+Example :- Create an employee table with table name as EMP and fields as EMPid, EName, EJob, Sal, Age , HireDate.
+
+Query :-
+CREATE TABLE emp
+(
+ empid 		SMALLINT,
+ ename 		VARCHAR(10),
+ job   		VARCHAR(10),
+ sal   		SMALLMONEY,
+ age   		TINYINT,
+ hiredate 	DATE
+)
+
+=> Above command created table structure/definition/metadata that includes columns, datatypes and size.
+
+INSERTING DATA (ROW) INTO TABLE :-
+--------------------------------
+=> first value is inserted into 1st field , second in 2nd field and so on.
+=> Character value and date value must be single quotes
+
+syntax :
+INSERT INTO <TBLNAME>
+		VALUES(V1,V2,V3,-----)
+
+Query :-
+INSERT INTO emp
+VALUES(100,'Sarah','developer',3000,20,'2022-08-28')
+
+
+TO SEE THE TABLE CREATED:-
+--------------------------
+syntax :
+SELECT * FROM <TBLNAME>
+
+Query :-
+SELECT * FROM emp
+
+
+=> Suppose 20 emp joins the company today how will you insert multiple records ??
+
+
+INSERTING MULTIPLE ROWS:
+------------------------
+=> GETDATE() is a function that returns today's date.
+
+syntax:
+INSERT INTO <TBLNAME>
+		VALUES(V1,V2,V3,V4,----),			(V1,V2,V3,V4,----),
+			(V1,V2,V3,V4,----),
+
+Query :-
+INSERT INTO emp
+VALUES(102,'Madiha','Manager',9000,34,GETDATE()),
+	(103,'Samiya','Analyst',6000,24,'2021-07-28')
+
+
+INSERTING NULLs:-
+----------------
+=>empty values are called NULL in SQL
+=>A null means blank or empty
+=>It is not equal to 0 or space.
+=>Nulls can be inserted in two ways
+
+
+
+
+
+
+
+

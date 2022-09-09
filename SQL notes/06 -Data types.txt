@@ -43,7 +43,7 @@ colname datatype(size),
 
 Rules:-
 -------
-1] table name should start ith alphabet.
+1] table name should start with alphabet.
 2] Name should not contain spaces & special Characters but allows _,#,$
 3] Name can be upto 128 characters
 4] Each table can have 1024 cols
@@ -103,7 +103,7 @@ INSERTING MULTIPLE ROWS:
 
 syntax:
 INSERT INTO <TBLNAME>
-		VALUES(V1,V2,V3,V4,----),			(V1,V2,V3,V4,----),
+		VALUES(V1,V2,V3,V4,----),				       (V1,V2,V3,V4,----),
 			(V1,V2,V3,V4,----),
 
 Query :-
@@ -117,7 +117,43 @@ INSERTING NULLs:-
 =>empty values are called NULL in SQL
 =>A null means blank or empty
 =>It is not equal to 0 or space.
+=>NULL is predefined keyword
 =>Nulls can be inserted in two ways
+
+
+method 1: to insert in all fields
+---------
+ INSERT INTO emp
+ VALUES(103,'vijay',NULL,NULL,30,'2019-01-12')
+
+NOTE: NUMBER OF COLUMNS AND RECORDS SHOULD MATCH.
+
+method 2: to insert into selected fields
+---------
+INSERT INTO emp(empid,ename,age,hiredate)
+VALUES(104,'ravi',28,GETDATE())
+remaining two fields job, sal filled with NULLS automatically.
+
+
+SP_HELP :-
+----------
+=> command to see the structure of the table which includes datatype,field name, size of datatype.
+
+  Syntax : sp_help <tableName>
+  example : sp_help emp
+
+column_name   | Datatype     | size
+-------------------------------------
+ empid 	      | SMALLINT     | 2
+ ename        | VARCHAR      | 10
+ job   	      | VARCHAR      | 10
+ sal   	      |  MALLMONEY   | 4
+ age   	      | TINYINT      | 1
+ hiredate     | DATE         | 3
+
+
+
+
 
 
 

@@ -1,0 +1,215 @@
+Keep in Mind That...
+--------------------
+SQL keywords are NOT case sensitive: 'select' is the same as 'SELECT'
+
+
+Some of The Most Important SQL Commands :
+----------------------------------------
+SELECT - extracts data from a database
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+
+
+Displaying Data:-
+----------------
+=> "SELECT" command is used to display data.
+=> we can display all rows & all cols.
+=> we can also display specific rows & cols.
+=> The SELECT statement is used to select data from a database.
+=> The data returned is stored in a result table, called the result-set.
+
+SELECT Syntax :
+SELECT column1, column2, ...
+FROM table_name;
+
+=> Here, column1, column2, ... are the field names of the table you want to select data from. 
+=> If you want to select all the fields available in the table, use the following 
+syntax:
+SELECT * FROM table_name;
+
+
+syntax : SELECT column/* FROM <tableName>
+
+	SQL = Language (suppose English)
+	queries = sentence(How you comunicate)
+	clauses = words (SELECT , FROM)
+
+
+FROM clause => specifies tablename
+SELECT clause => specifies column name
+
+
+
+SQL Server 
+----------
+
+use [AdventureWorks2012]
+
+--all
+select * from [HumanResources].[Department]
+
+--SHOW ME ALL THE DEPARTMENT NAMES.
+SELECT NAME FROM [HumanResources].[Department]
+
+
+--SHOW ME ALL THE GROUPS
+SELECT GROUPNAME FROM [HumanResources].[Department]
+
+--SHOW ME ALL THE DISTINCT GROUPNAME
+SELECT DISTINCT GROUPNAME FROM [HumanResources].[Department]
+
+--SHOW ME ALL THE DEPARTMENT NAME WHO ARE A PART OF MANUFACTURING
+SELECT NAME,GROUPNAME FROM [HumanResources].[Department]
+WHERE GROUPNAME LIKE 'Manufacturing'
+
+--GIVE ME ALL THE EMPLOYEES FROM THE EMPLOYEE TABLE
+SELECT * FROM [HumanResources].[Employee]
+
+--GIVE ME A LIST OF ALL EMPLOYEE WHO HAVE A ORGLEVEL = 2
+SELECT * FROM [HumanResources].[Employee] WHERE OrganizationLevel = 2
+
+--GIVE ME A LIST OF ALL EMPLOYEES WHO HAVE ORGLEVEL = 2 OR 3
+SELECT * FROM [HumanResources].[Employee] WHERE OrganizationLevel IN (2,3)
+
+--GIVE ME A LIST OF EMPLOYEES WHO HAVE A TITLE AS FACILITIES MANAGER
+SELECT * FROM [HumanResources].[Employee] WHERE JobTitle LIKE 'Facilities Manager'
+
+--GIVE ME ALL THE EMPLOYEES WHO HAVE THE WORD MANAGER IN THEIR TITLE
+SELECT * FROM [HumanResources].[Employee] WHERE JobTitle LIKE '%MANAGER'
+
+--GIVE ME ALL THE EMPLOYEES WHO HAVE THE WORD SALES IN THEIR JOBTITLE
+SELECT * FROM [HumanResources].[Employee] WHERE JobTitle LIKE '%SALES%'
+
+
+
+operators in sql server:-
+-----------------------
+
+Arithmetic operator => + - * / %
+Arithmetic operations returns values
+10+5 => 15
+10-5 =>5
+10*5 => 50
+10/5 =>2
+10%5 =>0
+
+Relational Operators => > >= < <= = <>
+Relational values returns True or False.
+10>5 => true
+10<5 =>false
+10=5 =>false
+10<>5 => true   (<> not equal to)
+
+Logical operators =>  AND  OR  NOT
+=> This operators are also used in other programming languages but the uses symbols to demonstrate logical operators in other languages
+
+
+Special operators => (only for SQL)
+BETWEEN
+IN 
+LIKE
+IS
+ANY
+ALL
+EXISTS
+PIVOT
+
+
+Set Operators => (only for SQL)
+UNION
+UNION ALL
+INTERSECT
+EXCEPT
+
+
+WHERE clause :-
+--------------
+=> used to get specific row/rows from table based on a condition.
+
+SELECT columns
+FROM tablename
+WHERE condition
+
+
+condition :-
+-----------
+
+	COLNAME operator VALUE
+
+=> OP must be any relational operator like 
+> >= < <= = <>
+=> if condition = true row is  selected
+=> if condition is false row is not selected
+
+--GIVE ME A LIST OF ALL EMPLOYEE WHO HAVE A ORGLEVEL = 2
+SELECT * FROM [HumanResources].[Employee] WHERE OrganizationLevel = 2
+
+syntax : 
+ SELECT * FROM tblName WHERE condition
+		or
+ SELECT colName FROM tblName WHERE  conditon
+
+=> while comparing the condition the datatype should match or else it will through error
+
+=> employees joined after 2011?
+--GIVE ME THE LIST OF EMPLOYEES JOINED AFTER 2011
+SELECT * FROM HumanResources.Employee WHERE HireDate > '2011-12-31'
+
+=> employees joined before 2011?
+--GIVE ME THE LIST OF EMPLOYEES FROM HUMANRESOURCE.EMPLOYEES TABLE WHO JOINED BEFORE 2011
+SELECT * FROM HumanResources.Employee WHERE HireDate < '2011-01-01'
+
+
+
+Multiple condition/ Compound Condition
+---------------------------------------
+=> Multiple conditions combined with AND / OR operators is called compound condition.
+
+syntax:
+-------
+SELECT * FROM tblName WHERE cond1 LOGICAL OPERATOR cond2
+
+Logical AND table:
+------------------
+COND1  AND  COND2   RESULT
+  T           T        T
+  T           F        F
+  F           T        F
+  F           F        F
+=> If both condition is T then result will be T
+
+
+Logical OR table:
+------------------
+COND1  AND  COND2   RESULT
+  T           T        T
+  T           F        T
+  F           T        T
+  F           F        F
+=> If atleast 1 condition is T then result will be T
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

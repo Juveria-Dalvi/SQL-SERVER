@@ -1,0 +1,13 @@
+=> display employees earning more then 2000 and less then 5000?
+SELECT * FROM emp
+WHERE sal<2000 AND sal>5000
+
+=> Employee joined in 2012
+-- Using AND operator
+SELECT * FROM HumanResources.Employee
+WHERE HireDate >= '2012-01-01' AND HireDate<='2013-01-01'
+
+=> Employees with jobTitle as Janitor / Stocker
+-- using OR operator
+SELECT LoginID,JobTitle FROM HumanResources.Employee
+WHERE JobTitle like 'Janitor' OR JobTitle like 'Stocker'

@@ -1,5 +1,5 @@
             body {
-                background-color: rgb(170, 233, 239);
+                background-color: rgba(182, 237, 242, 0.614);
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 header {
                     text-align: center;
@@ -9,16 +9,17 @@
                     width: 100vw;
                     z-index: 1;
                     overflow: hidden;
-                    color: rgb(11, 11, 11);
+                    color: rgb(250, 244, 244);
                     padding: 15px;
-                    background-color: rgb(249, 244, 244);
+                    background-color: rgb(16, 17, 16);
                     h1 {
                         font-variant: small-caps;
                         font-family: cursive;
+                        font-size: 22px;
                     }
                 }
                 main {
-                    letter-spacing: 4px;
+                    // letter-spacing: 4px;
                     position: absolute;
                     top: 180px;
                     .v-link {

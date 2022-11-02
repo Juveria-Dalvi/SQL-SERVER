@@ -1,5 +1,5 @@
 body {
-  background-color: #aae9ef;
+  background-color: rgba(182, 237, 242, 0.614);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -11,18 +11,18 @@ body header {
   width: 100vw;
   z-index: 1;
   overflow: hidden;
-  color: #0b0b0b;
+  color: #faf4f4;
   padding: 15px;
-  background-color: #f9f4f4;
+  background-color: #101110;
 }
 
 body header h1 {
   font-variant: small-caps;
   font-family: cursive;
+  font-size: 22px;
 }
 
 body main {
-  letter-spacing: 4px;
   position: absolute;
   top: 180px;
 }

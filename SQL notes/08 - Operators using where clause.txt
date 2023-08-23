@@ -1,0 +1,46 @@
+
+=> display employees earning more then 2000 and less then 5000?
+SELECT * FROM emp
+WHERE sal<2000 AND sal>5000
+
+=> Employee joined in 2012
+-- Using AND operator
+SELECT * FROM HumanResources.Employee
+WHERE HireDate >= '2012-01-01' AND HireDate<='2013-01-01'
+
+=> Employees with jobTitle as Janitor / Stocker
+-- using OR operator
+SELECT LoginID,JobTitle FROM HumanResources.Employee
+WHERE JobTitle like 'Janitor' OR JobTitle like 'Stocker'
+
+----------------------------
+
+AND operator is used when we need both condition must be satisfied
+
+OR operator is used when atleast 1 conditions should be satisfied
+
+< , > , <= , >= , = , < >
+
+IN operator is used to find multiple list of numeric as well as text values at a time
+
+The "NOT" operator in SQL is used to negate a condition or expression, essentially reversing its logic meaning. It's used to filter rows that do not meet a specified condition. For example:
+
+- `NOT condition` : Returns rows that do not satisfy the given condition.
+- `NOT EXISTS` : Checks for the absence of rows in a subquery result
+- `NOT LIKE` : Filters rows that do not match a specified pattern.
+- `NOT IN` : Filters rows that are not included in a specified list of values.
+
+In short, the "NOT" operator is used to express the opposite or negation of a given condition or criteria in SQL queries.
+
+BETWEEN operator is used for the range comparision
+
+NOT BETWEEN operator is used to check out of the given range
+
+LIKE operator is used for pattern comparision (contains,alphabets,wildcard characters)
+
+Wildcard chars:
+---------------
+
+% => 0 or many chars
+
+_ => exactly 1 char 

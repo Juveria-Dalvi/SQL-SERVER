@@ -1,0 +1,77 @@
+Interview Question : choice based
+
+SELECT * 
+FROM emp
+WHERE job IN ('clerk','%man%');
+
+a)Error
+b)returns clerk,manager, salesman records
+c)returns only clerk
+d)none
+
+ANSWER : (c)
+
+Reason : The correct interpretation of the query is as follows :
+
+The IN operator is used to check if the value of the job column is exactly one of the values in the list: 'clerk' and '%man%'
+
+The value 'clerk' is an exact match, so it will select records with the job title "clerk"
+
+The value '%man% is not a wildcard pattern within the IN operator
+Instead,
+it's treated as a literal string. so, it will select records where the job title is exactly "%man%, not where it contains "manager" or any other job title.
+
+Given this explanation, the correct answer is:
+
+(c) returns only clerk
+
+- if you have to specify group of multiple character assuming that they are all starting alphabets of words then the characters are written in '[]' square brackets
+
+E.g. :-
+=> name starts with 'a','c','j','s'
+Query => SELECT *
+	FROM emp
+	WHERE ename LIKE '[acjs]%';
+
+[ ] => to specify group of characters
+
+=> name starts between 'a' and 'p' (a to p)
+Query => SELECT *
+	FROM emp
+	WHERE ename LIKE '[a-p]%';
+
+=>[ - ] to specify range of characters
+--------------------
+
+IS operator :-
+------------
+=>used for NULL comparision
+
+	WHERE colname IS NULL
+	WHERE colname IS NOT NULL
+---------------------
+
+ORDER BY :
+-----------
+=> ORDER BY clause is used to sort data based one one or more columns either in ascending or in descending order
+
+Syntax: SELECT *
+	FROM tablename
+	ORDER BY columnName ASC/DESC
+
+By default it is sort in ascending order.
+In ORDER BY we can use columnName or columnNumber to sort the data but column number is not based on table, it is based on column names in select query
+
+=> arrange emp list dept wise asc and in dept, sal wise desc ?
+
+SELECT *
+FROM tblname
+ORDER BY dept ASC, sal DESC;
+
+It will sort data first in dept wise in ascending order and then it will sort department wise salary in descending order.
+
+Q: display employees working as clerk, manager and arrange output sal wise desc order?
+A: SELECT *
+   FROM emp
+   WHERE jobrole in ('clerk','manager') 
+   ORDER BY sal DESC;
